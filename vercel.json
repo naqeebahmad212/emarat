@@ -6,7 +6,7 @@
       "src": "/(.*)",
       "dest": "/",
       "headers": {
-        "Access-Control-Allow-Origin": ["*"],
+        "Access-Control-Allow-Origin": ["https://emarat-admin.vercel.app"],
         "Access-Control-Allow-Credentials": "true"
       }
     }
