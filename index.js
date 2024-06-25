@@ -1,4 +1,3 @@
-const port = import.meta.VITE_PORT || 4000;
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -14,6 +13,8 @@ const dotenv = require("dotenv");
 dotenv.config({
   path: "./config/.env",
 });
+const port = process.env.PORT || 4000;
+
 app.use(express.json());
 app.use(cors({ origin: ["*"], allowedHeaders: ["*"] }));
 app.use(express.urlencoded({ extended: true }));
